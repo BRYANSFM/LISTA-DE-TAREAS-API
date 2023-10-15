@@ -95,8 +95,8 @@ function App() {
   }
 
   return (
-    <div className=" flex flex-wrap items-center justify-center flex-col text-center bg-gradient-to-r from-blue-700  via-[#6f2894]  to-[#9f28a2] w-screen h-screen ">
-      <div className="flex justify-start items-start  text-[25px] text-[white]  w-[40%] h-[6%] font-bold">
+    <div className=" p-[25px] md:p-[0px] flex flex-wrap items-center justify-center flex-col text-center bg-gradient-to-r from-blue-700  via-[#6f2894]  to-[#9f28a2] w-screen border h-screen ">
+      <div className="flex justify-start items-start  text-[25px] text-[white] w-full md:w-[40%] h-[6%] font-bold">
         T O D O
       </div>
       <TareaFormulario
@@ -110,11 +110,11 @@ function App() {
       />
       
       {isLoading ?
-       <h1 className='text-[yellow] font-bold text-[85px]'>¡Cargando...!</h1>
+       <h1 className='text-[yellow] font-bold text-[20px] md:text-[50px]'>¡Cargando...!</h1>
         : getLast5Elements(todos).map(
           (el) => (
         <div
-          className = ' border-[#44496a] flex justify-between items-center border-[2px] text-white bg-[#25273c] w-[40%] min-h-[6%]  px-[40px]  py-[10px]'>
+          className = 'w-full md:w-[40%]  flex justify-between items-center border-[2px] border-[#44496a] text-white bg-[#25273c]  min-h-[6%]  px-[40px]  py-[10px]'>
           
           <div 
             className='bg-transparent flex justify-between items-center '>

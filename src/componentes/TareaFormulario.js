@@ -10,7 +10,7 @@ function TareaFormulario({ CrearServicios, tareaNueva }) {
   };
 
   return (
-    <form className='w-[40%] h-[6%] mb-[20px]' onSubmit={Onsubmit} >
+    <form className='w-full md:w-[40%]  h-[6%] mb-[20px]' onSubmit={Onsubmit} >
       <input
         className=" bg-[#25273c] w-full h-full  item-center text-white px-[40px]"
         type="text"
